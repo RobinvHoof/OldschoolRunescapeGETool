@@ -1,0 +1,15 @@
+C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\bin\Debug\OldschoolRunescapeGETool.exe.config
+C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\bin\Debug\OldschoolRunescapeGETool.exe
+C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\bin\Debug\OldschoolRunescapeGETool.pdb
+C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\obj\Debug\OldschoolRunescapeGETool.csprojAssemblyReference.cache
+C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\obj\Debug\OldschoolRunescapeGETool.Form1.resources
+C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\obj\Debug\OldschoolRunescapeGETool.Properties.Resources.resources
+C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\obj\Debug\OldschoolRunescapeGETool.csproj.GenerateResource.cache
+C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\obj\Debug\OldschoolRunescapeGETool.csproj.CoreCompileInputs.cache
+C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\obj\Debug\OldschoolRunescapeGETool.exe
+C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\obj\Debug\OldschoolRunescapeGETool.pdb
+C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\bin\Debug\Newtonsoft.Json.dll
+C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\bin\Debug\Newtonsoft.Json.xml
+C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\obj\Debug\OldschoolRunescapeGETool.csproj.CopyComplete
