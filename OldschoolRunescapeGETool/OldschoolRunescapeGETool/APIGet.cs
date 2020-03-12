@@ -7,6 +7,8 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using Newtonsoft.Json;
+using System.Drawing;
+using System.IO;
 
 
 namespace OldschoolRunescapeGETool
@@ -23,17 +25,27 @@ namespace OldschoolRunescapeGETool
             baseUrl = bufferBaseUrl;
         }
 
-        public async Task<Item> getItemInfo(int itemId)
+        public async Task<Item> GetItemInfo(int itemId)
         {
-            Item item = null;
-            HttpResponseMessage response = await client.GetAsync(baseUrl + "/api/catalogue/detail.json?item=" + Convert.ToString(itemId));
+            Item item;
+            string url = baseUrl + "/api/catalogue/detail.json?item=" + Convert.ToString(itemId);
+            HttpResponseMessage response = await client.GetAsync(url);
             if (response.IsSuccessStatusCode)
             {
                  item = await jsonConverter.JsonToItem(response);
-            }
-            Console.WriteLine(item.ToString());
+            } else { return null; }
             return item;
         }
+
+        public Bitmap GetItemIcon(Item item)
+        {
+            WebClient client = new WebClient();
+            Stream stream = client.OpenRead(item.icon_large);
+            Bitmap image = new Bitmap(stream);
+            return image;
+        }
+
         
+
     }
 }

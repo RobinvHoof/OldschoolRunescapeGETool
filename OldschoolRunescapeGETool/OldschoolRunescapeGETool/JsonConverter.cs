@@ -15,20 +15,18 @@ namespace OldschoolRunescapeGETool
 {
     class JsonConverter
     {
-        //public async Task<Item> JsonToItem(HttpResponseMessage response)
-        //{
-        //    Item item = await response.Content.ReadAsAsync<Item>();
-        //    return item;
-        //}
-
         public async Task<Item> JsonToItem(HttpResponseMessage response)
         {
             string json = await response.Content.ReadAsStringAsync();
+            json = json.Remove(0, 8); // Removing {"item:" from start of json string as this is not needed
+            json = json.Remove(json.Length - 1); // Removing } from the end of json string as this is not needed
             Item item = JsonConvert.DeserializeObject<Item>(json);
+            return item;
+        }
 
-
-
-
+        public SimpleItem JsonToSimpleItem(string json)
+        {
+            SimpleItem item = JsonConvert.DeserializeObject<SimpleItem>(json);
             return item;
         }
     }

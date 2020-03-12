@@ -6,41 +6,47 @@ using System.Threading.Tasks;
 
 namespace OldschoolRunescapeGETool
 {
-    class Item
+    public class Item
     {
-        public string icon;
-        public string icon_large;
-        public int id;
-        public string type;
-        public string typeIcon;
-        public string name;
-        public string description;
-
-        public struct current
+        public struct StrCurrent
         {
-            string trend;
-            string price;
+            public string trend;
+            public string price;
         }
-        public bool members;
-        public struct day30
+        public struct StrToday
         {
-            string trend;
-            string change;
+            public string trend;
+            public string price;
         }
-        public struct day90
+        public struct StrDay30
         {
-            string trend;
-            string change;
+            public string trend;
+            public string change;
         }
-        public struct day180
+        public struct StrDay90
         {
-            string trend;
-            string change;
+            public string trend;
+            public string change;
+        }
+        public struct StrDay180
+        {
+            public string trend;
+            public string change;
         }
 
-        public Item(string json)
-        {
 
-        }
+        public string icon { get; set; }
+        public string icon_large { get; set; }
+        public int id { get; set; }
+        public string type { get; set; }
+        public string typeIcon { get; set; }
+        public string name { get; set; }
+        public string description { get; set; }
+        public StrCurrent current { get; set; }   
+        public StrToday today { get; set; }     
+        public bool members { get; set; }
+        public StrDay30 day30 { get; set; }    
+        public StrDay90 day90 { get; set; }
+        public StrDay180 day180 { get; set; }
     }
 }
