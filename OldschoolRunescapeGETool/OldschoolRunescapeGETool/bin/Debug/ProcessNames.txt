@@ -1,0 +1,13 @@
+Logs > Plank, 100
+Oak logs > Oak plank, 250
+Teak logs > Teak plank, 500
+Mahogany logs > Mahogany plank, 1500
+Chocolate bar > Chocolate dust, 0
+Cowhide > Hard leather, 3
+Cowhide > Leather, 1
+Black dragonhide > Black dragon leather, 20
+Blue dragonhide > Blue dragon leather, 20
+Green dragonhide > Green dragon leather, 20
+Red dragonhide > Red dragon leather, 20
+Potato > Baked potato, 0
+Sapphire ring > Ring of recoil, 143

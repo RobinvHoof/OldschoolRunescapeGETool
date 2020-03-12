@@ -23,9 +23,9 @@ namespace OldschoolRunescapeGETool
             itemIdList = Reader.LoadItemIdList();
         }
 
-        protected async Task<Item> GetItemObj(int itemId)
+        public async Task<Item> GetItemObj(int itemId)
         {
-            Item item = await Api.GetItemInfo(itemId);
+            Item item = await Api.GetItemInfo(itemId).ConfigureAwait(false);
             return item;
         }
 
@@ -56,13 +56,16 @@ namespace OldschoolRunescapeGETool
             return -1;
         }
 
-        public Bitmap GetItemIcon(int itemId)
+        public string GetNameFromId(int itemId)
         {
-            Bitmap image = Api.GetItemIcon(GetItemObj(itemId).Result);
-            return image;
-        }
-
-
-        
+            foreach (SimpleItem i in itemIdList)
+            {
+                if (i.id == itemId)
+                {
+                    return i.name;
+                }
+            }
+            return null;
+        }        
     }
 }

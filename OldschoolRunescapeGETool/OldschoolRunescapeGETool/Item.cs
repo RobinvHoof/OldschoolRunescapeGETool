@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace OldschoolRunescapeGETool
 {
     public class Item
     {
+        APIGet Api = new APIGet("http://services.runescape.com/m=itemdb_oldschool");
+
         public struct StrCurrent
         {
             public string trend;
@@ -48,5 +51,18 @@ namespace OldschoolRunescapeGETool
         public StrDay30 day30 { get; set; }    
         public StrDay90 day90 { get; set; }
         public StrDay180 day180 { get; set; }
+
+        public Bitmap storeImage = null;
+        public Bitmap image
+        {
+            get
+            {
+                if (storeImage == null)
+                {
+                    storeImage = Api.GetItemIcon(this);
+                }
+                return storeImage;
+            }
+        }
     }
 }

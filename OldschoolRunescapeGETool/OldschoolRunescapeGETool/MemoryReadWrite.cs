@@ -41,6 +41,24 @@ namespace OldschoolRunescapeGETool
             return itemList;
         }
 
+        public List<SimpleProcess> LoadProcessNameList()
+        {
+            string[] lines = File.ReadAllLines("ProcessNames.txt");
+            List<string> processList = new List<string>(lines);
+            List<SimpleProcess> returnList = new List<SimpleProcess>();
+
+            for(int i = 0; i < processList.Count; i++)
+            {
+                string bufferString = lines[i];
+                string[] splitString = bufferString.Split(',');
+
+                SimpleProcess process = new SimpleProcess(splitString[0], Convert.ToInt32(splitString[1]));
+                returnList.Add(process);
+            }
+
+            return returnList;
+        }
+
 
 
     }

@@ -80,6 +80,7 @@
     <Compile Include="MemoryReadWrite.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleProcess.cs" />
     <EmbeddedResource Include="GEInfo.resx">
       <DependentUpon>GEInfo.cs</DependentUpon>
     </EmbeddedResource>

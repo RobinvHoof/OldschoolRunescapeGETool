@@ -80,7 +80,6 @@
             this.ItemView.Size = new System.Drawing.Size(337, 394);
             this.ItemView.TabIndex = 7;
             this.ItemView.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ItemView_MouseClick);
-            this.ItemView.SelectedIndexChanged += new System.EventHandler(this.ItemView_SelectedIndexChanged);
             // 
             // SearchBar
             // 

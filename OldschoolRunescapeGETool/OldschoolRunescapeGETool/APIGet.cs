@@ -29,10 +29,10 @@ namespace OldschoolRunescapeGETool
         {
             Item item;
             string url = baseUrl + "/api/catalogue/detail.json?item=" + Convert.ToString(itemId);
-            HttpResponseMessage response = await client.GetAsync(url);
+            HttpResponseMessage response = await client.GetAsync(url).ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                 item = await jsonConverter.JsonToItem(response);
+                 item = await jsonConverter.JsonToItem(response).ConfigureAwait(false);
             } else { return null; }
             return item;
         }

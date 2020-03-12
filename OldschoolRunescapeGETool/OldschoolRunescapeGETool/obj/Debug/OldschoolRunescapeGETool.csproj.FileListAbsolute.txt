@@ -14,3 +14,4 @@ C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\Old
 C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\obj\Debug\OldschoolRunescapeGETool.MainMenu.resources
 C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\obj\Debug\OldschoolRunescapeGETool.GEInfo.resources
 C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\obj\Debug\OldschoolRunescapeGETool.ProcessingProfits.resources
+C:\Users\robin\Desktop\Git\OldschoolRunescapeGETool\OldschoolRunescapeGETool\OldschoolRunescapeGETool\obj\Debug\OldschoolRunescapeGETool.csproj.CoreCompileInputs.cache

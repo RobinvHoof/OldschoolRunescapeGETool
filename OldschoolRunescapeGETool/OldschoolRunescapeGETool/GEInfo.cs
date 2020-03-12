@@ -34,11 +34,6 @@ namespace OldschoolRunescapeGETool
             ItemView.DataSource = containList;
         }
 
-        private async void ItemView_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private async void ItemView_MouseClick(object sender, MouseEventArgs e)
         {
             long bufferMilliseconds = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
@@ -48,7 +43,7 @@ namespace OldschoolRunescapeGETool
                 {
                     Console.WriteLine(ItemView.SelectedItem.ToString() + " | " + GEAdmin.GetIdFromName(ItemView.SelectedItem.ToString()));
                     Item item = await Api.GetItemInfo(GEAdmin.GetIdFromName(ItemView.SelectedItem.ToString()));
-                    ItemIcon.Image = Api.GetItemIcon(item);
+                    ItemIcon.Image = item.image;
                     ItemNameLabel.Text = item.name;
                     ItemDescriptionLabel.Text = item.description;
                     PriceLabel.Text = item.current.price;
